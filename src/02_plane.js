@@ -6,7 +6,7 @@ import DeckGL from '@deck.gl/react';
 import { INITIAL_VIEW_STATE, MAP_STYLE, DEFAULT_THEME } from './models';
 
 export default function App() {
-  const initialViewState = INITIAL_VIEW_STATE;
+  const initialViewState = { ...INITIAL_VIEW_STATE, zoom: 5 };
   const mapStyle = MAP_STYLE;
   const theme = DEFAULT_THEME;
   const layers = [];
