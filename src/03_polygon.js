@@ -9,6 +9,12 @@ import { INITIAL_VIEW_STATE, MAP_STYLE, DEFAULT_THEME, TOKYO } from './models';
 // Import a simple control panel
 import ControlPanel from './components/control-panel';
 
+function rgb2hex (rgb) {
+	return "#" + rgb.map(( value ) => {
+		return ( "0" + value.toString( 16 ) ).slice( -2 ) ;
+	} ).join( "" ) ;
+}
+
 export default function App() {
   const initialViewState = INITIAL_VIEW_STATE;
   const mapStyle = MAP_STYLE;
@@ -60,7 +66,7 @@ export default function App() {
       controller={true}
     >
       <ControlPanel 
-        title={'Hello deck.gl!'} 
+        title={rgb2hex(buildingColor)} 
         action1Label={'Change color'}
         onAction1={changeBuildingColor} />
       <StaticMap reuseMaps mapStyle={mapStyle} preventStyleDiffing={true}>
