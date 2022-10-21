@@ -1,7 +1,6 @@
-
 import { AmbientLight, PointLight, LightingEffect } from '@deck.gl/core';
 
-export const TOKYO = [139.76742520741126, 35.681114193258104]
+export const TOKYO = [139.76742520741126, 35.681114193258104];
 
 const ambientLight = new AmbientLight({
   color: [255, 255, 255],

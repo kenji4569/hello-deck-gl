@@ -1,6 +1,5 @@
-/* global window */
 import React from 'react';
-import {StaticMap} from 'react-map-gl';
+import { StaticMap } from 'react-map-gl';
 import DeckGL from '@deck.gl/react';
 
 //  Import common definitions
