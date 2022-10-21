@@ -96,7 +96,6 @@ export default function App() {
   // useCallback memoize the function for performance
   const changeMapStyle = useCallback(() => {
     let nextMapboxStyleIndex = (mapStyleIndex + 1) % MAPBOX_STYLES.length
-    console.log(nextMapboxStyleIndex)
     setMapStyleIndex(nextMapboxStyleIndex)
   }, [mapStyleIndex])
 
