@@ -52,23 +52,23 @@ export default function App() {
   const r = 0.01
   // Add trips layer
   const trips = [{
-    "vendor": 0,
-    "path": [
+    vendor: 0,
+    path: [
       [TOKYO[0], TOKYO[1]],
       [TOKYO[0] + r, TOKYO[1]],
       [TOKYO[0] + r, TOKYO[1] + r],
       [TOKYO[0], TOKYO[1] + r],
     ],
-    "timestamps": [ 0, 100, 200, 300]
+    timestamps: [ 0, 100, 200, 300]
   }, {
-    "vendor": 1,
-    "path": [
+    vendor: 1,
+    path: [
       [TOKYO[0], TOKYO[1]],
       [TOKYO[0] - r, TOKYO[1]],
       [TOKYO[0] - r, TOKYO[1] - r],
       [TOKYO[0], TOKYO[1] - r],
     ],
-    "timestamps": [ 100, 200, 300, 400]
+    timestamps: [ 100, 200, 300, 400]
   }]
 
   const trailLength = 180

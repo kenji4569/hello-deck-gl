@@ -35,8 +35,8 @@ export default function App() {
   // Add polygon layers
   const r = 0.01
   const buildings = [{
-    "height": 1000,
-    "polygon": [
+    height: 1000,
+    polygon: [
       [TOKYO[0] - r, TOKYO[1] - r],
       [TOKYO[0] + r, TOKYO[1] - r],
       [TOKYO[0] + r, TOKYO[1] + r],
