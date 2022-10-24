@@ -12,5 +12,6 @@ npm install
 npm start
 
 # To inject mapbox api key, put a query parameter as follows
+# See https://docs.mapbox.com/help/glossary/access-token/ to get the key.
 http://localhost:8080/?mapbox_key=xxx
 ```
