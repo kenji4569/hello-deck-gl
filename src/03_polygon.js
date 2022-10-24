@@ -10,9 +10,9 @@ import { INITIAL_VIEW_STATE, MAP_STYLE, DEFAULT_THEME, TOKYO } from './models';
 import ControlPanel from './components/control-panel';
 
 function rgb2hex (rgb) {
-	return "#" + rgb.map(( value ) => {
-		return ( "0" + value.toString( 16 ) ).slice( -2 ) ;
-	} ).join( "" ) ;
+  return "#" + rgb.map(( value ) => {
+    return ( "0" + value.toString( 16 ) ).slice( -2 ) ;
+  } ).join( "" ) ;
 }
 
 export default function App() {
